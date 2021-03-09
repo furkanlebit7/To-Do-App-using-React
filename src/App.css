@@ -1,38 +1,110 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #100f10;
+}
+h1 {
+  margin-top: 50px;
   text-align: center;
+  color: goldenrod;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.description {
+  text-align: center;
+  margin-top: 10px;
+  color: goldenrod;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
+  height: auto;
+  margin: auto;
+}
+.list {
+  width: 50%;
+  margin: 70px auto 30px auto;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 2;
+}
+li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 7px;
+  border: 1px solid #c651cd;
+  background-color: #8739f9;
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 2px 10px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  color: rgb(228, 228, 228);
+}
+.form {
+  width: 50%;
+  margin: 0px auto 0px;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+input {
+  width: 80%;
+  padding: 8px 12px;
+  border: none;
+  background-color: #363636;
+  border-radius: 2px;
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(228, 228, 228);
+}
+input:focus {
+  outline: none;
+}
+.clearBtn {
+  font-size: 15px;
+  margin-top: 20px;
+  padding: 10px 10px;
+  cursor: pointer;
+  color: rgb(228, 228, 228);
+  background-color: #c651cd;
+  border: none;
+  border-radius: 5px;
+}
+.clearBtn:hover {
+  transform: scale(1.1);
 }
 
-.App-link {
-  color: #61dafb;
+.deleteBtn {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(228, 228, 228);
+}
+.deleteBtn:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addBtn {
+  font-size: 15px;
+  padding: 10px 10px;
+  cursor: pointer;
+  color: rgb(228, 228, 228);
+  background-color: #c651cd;
+  border: none;
+  border-radius: 5px;
+}
+.addBtn:hover {
+  transform: scale(1.1);
+}
+.error {
+  color: #c651cd;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
